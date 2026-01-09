@@ -1,0 +1,111 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1a1a2e"/>
+  
+  <!-- Outer glow -->
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#4a90e2" stroke-width="2" opacity="0.2"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#6fb1ff" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Crescent Moon Shape (like 🌙) -->
+  <defs>
+    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8c8f0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7da8e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a88c8;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="glowGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#6fb1ff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main crescent moon -->
+  <g transform="translate(256, 256) rotate(-20)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="150" fill="url(#moonGradient)"/>
+    
+    <!-- Inner cutout circle to create crescent -->
+    <circle cx="40" cy="-10" r="130" fill="#1a1a2e"/>
+    
+    <!-- Craters on visible part -->
+    <circle cx="-60" cy="-40" r="18" fill="#4a6a98" opacity="0.4"/>
+    <circle cx="-40" cy="30" r="22" fill="#4a6a98" opacity="0.35"/>
+    <circle cx="-70" cy="60" r="15" fill="#4a6a98" opacity="0.3"/>
+    <circle cx="-50" cy="-80" r="12" fill="#4a6a98" opacity="0.35"/>
+    
+    <!-- Glow on crescent edge -->
+    <ellipse cx="-45" cy="0" rx="35" ry="120" fill="url(#glowGradient)" opacity="0.4"/>
+  </g>
+  
+  <!-- AI neural network connections -->
+  <g stroke="#4affff" stroke-width="2.5" fill="none" opacity="0.7">
+    <!-- Left connections -->
+    <line x1="80" y1="200" x2="130" y2="220"/>
+    <line x1="80" y1="256" x2="130" y2="256"/>
+    <line x1="80" y1="312" x2="130" y2="292"/>
+    
+    <line x1="130" y1="220" x2="160" y2="240"/>
+    <line x1="130" y1="256" x2="160" y2="256"/>
+    <line x1="130" y1="292" x2="160" y2="272"/>
+    
+    <!-- Right connections -->
+    <line x1="352" y1="240" x2="382" y2="220"/>
+    <line x1="352" y1="256" x2="382" y2="256"/>
+    <line x1="352" y1="272" x2="382" y2="292"/>
+    
+    <line x1="382" y1="220" x2="432" y2="200"/>
+    <line x1="382" y1="256" x2="432" y2="256"/>
+    <line x1="382" y1="292" x2="432" y2="312"/>
+  </g>
+  
+  <!-- AI nodes -->
+  <g fill="#4affff">
+    <circle cx="80" cy="200" r="7" opacity="0.9"/>
+    <circle cx="80" cy="256" r="7" opacity="0.9"/>
+    <circle cx="80" cy="312" r="7" opacity="0.9"/>
+    <circle cx="130" cy="220" r="6" opacity="0.9"/>
+    <circle cx="130" cy="256" r="6" opacity="0.9"/>
+    <circle cx="130" cy="292" r="6" opacity="0.9"/>
+    
+    <circle cx="382" cy="220" r="6" opacity="0.9"/>
+    <circle cx="382" cy="256" r="6" opacity="0.9"/>
+    <circle cx="382" cy="292" r="6" opacity="0.9"/>
+    <circle cx="432" cy="200" r="7" opacity="0.9"/>
+    <circle cx="432" cy="256" r="7" opacity="0.9"/>
+    <circle cx="432" cy="312" r="7" opacity="0.9"/>
+  </g>
+  
+  <!-- Sparkle stars around moon -->
+  <g fill="#ffffff">
+    <circle cx="140" cy="160" r="3" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="370" cy="180" r="2.5" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="350" cy="340" r="2" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="360" r="2.5" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Decorative stars -->
+  <g fill="#4affff" opacity="0.5">
+    <polygon points="120,140 121.5,144 125.5,144 122,146.5 123.5,150.5 120,148 116.5,150.5 118,146.5 114.5,144 118.5,144"/>
+    <polygon points="390,160 391.5,164 395.5,164 392,166.5 393.5,170.5 390,168 386.5,170.5 388,166.5 384.5,164 388.5,164" transform="scale(0.8)"/>
+    <polygon points="370,350 371.5,354 375.5,354 372,356.5 373.5,360.5 370,358 366.5,360.5 368,356.5 364.5,354 368.5,354" transform="scale(0.7)"/>
+  </g>
+  
+  <!-- Text: LUNARO -->
+  <text x="256" y="460" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#6fb1ff" text-anchor="middle" letter-spacing="2">
+    LUNARO
+  </text>
+  
+  <!-- Text: AI -->
+  <text x="256" y="495" font-family="Arial, sans-serif" font-size="26" fill="#4affff" text-anchor="middle" letter-spacing="4">
+    A I
+  </text>
+</svg>

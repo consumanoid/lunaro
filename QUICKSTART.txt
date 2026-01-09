@@ -1,0 +1,206 @@
+🌙 LUNARO AI - QUICK START GUIDE
+========================================
+
+For complete beginners on 32-bit Android with Termux
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 STEP 1: INSTALL TERMUX
+-------------------------
+1. Open your phone's browser
+2. Go to: https://f-droid.org/
+3. Download F-Droid app
+4. Install F-Droid
+5. Open F-Droid
+6. Search for "Termux"
+7. Install Termux
+
+⚠️ DO NOT install Termux from Google Play Store!
+   It's outdated and won't work!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 STEP 2: SETUP TERMUX
+-----------------------
+1. Open Termux (black screen with text)
+2. Copy this command (long-press to paste in Termux):
+
+   bash setup.sh
+
+3. Wait 20-30 minutes (grab a coffee ☕)
+4. When asked for storage permission, tap "Allow"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📂 STEP 3: MOVE FILES TO TERMUX
+-------------------------------
+1. Extract this ZIP to your Downloads folder
+2. Open Termux
+3. Type these commands:
+
+   cd ~
+   mkdir LunaroAI
+   cd LunaroAI
+   cp /sdcard/Download/lunaro_ai_app/* .
+
+4. Check files are there:
+
+   ls
+
+   You should see:
+   - main.py
+   - chat_ai.py
+   - model_trainer.py
+   - buildozer.spec
+   - README.md
+   - setup.sh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 STEP 4: CONFIGURE FIREBASE (OPTIONAL)
+-----------------------------------------
+⚠️ Skip this if you don't want cloud backup!
+
+If you want Firebase (cloud backup of AI learning):
+
+1. In Termux, type:
+   nano chat_ai.py
+
+2. Find this part (around line 24):
+   database_url: "https://YOUR-PROJECT.firebaseio.com"
+   api_key: "YOUR_API_KEY"
+   project_id: "YOUR_PROJECT_ID"
+
+3. Replace YOUR-PROJECT, YOUR_API_KEY, YOUR_PROJECT_ID
+   with your actual Firebase info
+
+4. Press: Ctrl + X
+5. Press: Y
+6. Press: Enter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 STEP 5: TEST THE APP
+-----------------------
+Before building APK, make sure it works:
+
+1. In Termux:
+   python main.py
+
+2. If you see the app window - SUCCESS! ✅
+3. To close it: Press Ctrl + C
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏗️ STEP 6: BUILD APK
+--------------------
+⚠️ THIS TAKES 30-60 MINUTES!
+⚠️ MAKE SURE YOUR PHONE IS CHARGING!
+
+1. In Termux:
+   buildozer android debug
+
+2. When asked "Do you accept the license?", type: y
+
+3. Now wait... ⏳
+   - Keep Termux open
+   - Don't let phone sleep
+   - Watch the progress
+
+4. When done, you'll see: "APK created successfully"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📲 STEP 7: INSTALL YOUR APP
+---------------------------
+1. In Termux:
+   cp bin/*.apk /sdcard/Download/
+
+2. Open your file manager
+3. Go to Downloads folder
+4. Find file: conversationalai-1.0.0-armeabi-v7a-debug.apk
+5. Tap it to install
+
+⚠️ If it says "Blocked":
+   - Go to: Settings > Security
+   - Enable: Install from Unknown Sources
+   - OR: Settings > Apps > Special Access > Install Unknown Apps
+   - Allow your file manager to install apps
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 STEP 8: USE YOUR APP!
+------------------------
+1. Open "Lunaro AI" app
+2. Type a username (anything you want)
+3. Tap "Login / Create Account"
+4. Start chatting! 💬
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 CHANGE THEMES
+----------------
+- Tap the 🎨 button (top left)
+- Pick your favorite theme
+- Done!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 ADMIN PANEL
+--------------
+- Tap the 📊 button (top right)
+- Password: madebyconsumanoid:3
+- View stats and AI learning
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚪 LOGOUT
+---------
+- Tap the 🚪 button (top right)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ PROBLEMS?
+-----------
+
+"Command not found: python"
+→ Run: pkg install python
+
+"Module not found: kivy"
+→ Run: pip install kivy
+
+"Build failed"
+→ Run: buildozer android clean
+→ Then: buildozer android debug
+
+"APK won't install"
+→ Enable "Unknown Sources" in Settings
+→ Go to: Settings > Security > Unknown Sources
+
+"App crashes"
+→ Make sure all files are in same folder
+→ Test with: python main.py
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS
+-------
+✅ Use Pure Black theme to save battery
+✅ Chat more = Smarter AI
+✅ Share APK with friends!
+✅ Train AI manually with model_trainer.py
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 NEED MORE HELP?
+------------------
+Read the full README.md file for:
+- Detailed explanations
+- Advanced features
+- Manual training
+- Firebase setup
+- Troubleshooting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+That's it! Enjoy your Lunaro AI chatbot! 🌙✨
