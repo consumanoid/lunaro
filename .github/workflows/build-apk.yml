@@ -36,6 +36,8 @@ jobs:
             libncurses5-dev \
             libncursesw5-dev \
             liblzma-dev \
+            xz-utils \
+            uuid-dev \
             autoconf \
             automake \
             libtool \
