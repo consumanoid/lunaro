@@ -19,9 +19,9 @@ class ConversationalAI:
         
         # Firebase config (EDIT THIS!)
         self._firebase_config = {
-            'database_url': "https://YOUR-PROJECT.firebaseio.com",
-            'api_key': "YOUR_API_KEY",
-            'project_id': "YOUR_PROJECT_ID"
+            'database_url': "https://lunaro-ai-default-rtdb.asia-southeast1.firebasedatabase.app",
+            'api_key': "AIzaSyDFdH7tpXficlsV16ceNlOxSTWo1FL0xRI",
+            'project_id': "lunaro-ai"
         }
         
         # Load learning data
