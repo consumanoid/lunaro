@@ -1,3 +1,4 @@
+
 [app]
 
 # (str) Title of your application
@@ -21,6 +22,10 @@ version = 1.0.0
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 requirements = python3,kivy,requests,pillow
+
+#e
+
+python_version = 3.10
 
 # (str) Supported orientation (landscape, sensorLandscape, portrait or all)
 orientation = portrait
@@ -108,6 +113,9 @@ android.accept_sdk_license = True
 
 # (int) Log level (0 = error only, 1 = info, 2 = debug (with command output))
 log_level = 2
+
+# idk
+python = 3.10
 
 # (int) Display warning if buildozer is run as root (0 = False, 1 = True)
 warn_on_root = 1
