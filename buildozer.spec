@@ -27,8 +27,10 @@ requirements = python3==3.10,kivy,requests,pillow
 cython_version = 0.29.36
 
 #python version
-
 python_version = 3.10
+
+#p4a
+p4a_branch = stable
 
 # (str) Supported orientation (landscape, sensorLandscape, portrait or all)
 orientation = portrait
