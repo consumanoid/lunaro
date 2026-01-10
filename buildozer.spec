@@ -21,9 +21,12 @@ version = 1.0.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,requests,pillow
+requirements = python3==3.10,kivy,requests,pillow
 
-#e
+#cython version
+cython_version = 0.29.36
+
+#python version
 
 python_version = 3.10
 
