@@ -21,7 +21,7 @@ version = 1.0.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.10,kivy,requests,pillow
+requirements = python3==3.10.13,kivy==2.3.0,pyjnius==1.5.0,requests,pillow
 
 #cython version
 cython_version = 0.29.36
@@ -52,6 +52,9 @@ android.api = 33
 
 # (int) Minimum API your APK will support.
 android.minapi = 21
+
+#android ndk api
+android.ndk_api = 21
 
 # (str) Android NDK version to use
 android.ndk = 25b
