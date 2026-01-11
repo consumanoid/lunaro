@@ -145,4 +145,5 @@ warn_on_root = 1
 #    buildozer --profile demo android debug
 
 [p4a]
-branch = stable
+android.gradle_plugin = 7.4.2
+android.gradle_version = 7.5
