@@ -68,7 +68,7 @@ android.private_storage = True
 # (str) Android logcat filters to use
 android.logcat_filters = *:S python:D
 
-android.archs = arm64-v8a
+android.archs = armeabi-v7a
 
 # (bool) Enable AndroidX support
 android.enable_androidx = True
